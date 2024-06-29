@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+
+<head>
+  <script src="../assets/js/color-modes.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Starter Template · Bootstrap v5.3</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/starter-template/">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link href="../assets/custom/css/builtin.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- icon definition -->
+  <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+    <symbol id="check2" viewBox="0 0 16 16">
+      <path
+        d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+    </symbol>
+    <symbol id="arrow-right-circle" viewBox="0 0 16 16">
+      <path
+        d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+    </symbol>
+    <symbol id="circle-half" viewBox="0 0 16 16">
+      <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
+    </symbol>
+    <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+      <path
+        d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
+      <path
+        d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z" />
+    </symbol>
+    <symbol id="sun-fill" viewBox="0 0 16 16">
+      <path
+        d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+    </symbol>
+    <symbol id="github" viewBox="0 0 16 16">
+      <path
+        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+    </symbol>
+    <symbol id="tools" viewBox="0 0 16 16">
+      <path
+        d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.27 3.27a.997.997 0 0 0 1.414 0l1.586-1.586a.997.997 0 0 0 0-1.414l-3.27-3.27a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3c0-.269-.035-.53-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814zm9.646 10.646a.5.5 0 0 1 .708 0l2.914 2.915a.5.5 0 0 1-.707.707l-2.915-2.914a.5.5 0 0 1 0-.708M3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026z" />
+    </symbol>
+    <symbol id="twitter" viewBox="0 0 16 16">
+      <path
+        d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+    </symbol>
+    <symbol id="three-dots" viewBox="0 0 16 16">
+      <path
+        d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3" />
+    </symbol>
+  </svg>
+
+  <!-- header -->
+  <div class="col-lg-8 mx-auto p-4 py-md-5">
+    <header class="pb-3 mb-3 navbar navbar-expand-lg bd-navbar sticky-top border-bottom">
+
+      <!-- navbar -->
+      <nav class="container-xxl bd-gutter flex-wrap flex-lg-nowrap" aria-label="Main navigation">
+
+        <!-- Tools icon -->
+        <!-- <a class="navbar-brand p-0 me-0 me-lg-2" href="/" aria-label="Bootstrap">
+          <svg class="bi me-2" width="40" height="32">
+            <use xlink:href="#tools" />
+          </svg>
+        </a> -->
+
+        <!-- three-dots -->
+        <div class="d-flex">
+          <button class="navbar-toggler d-flex d-lg-none order-3 p-2" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-label="Toggle navigation">
+            <svg class="bi" width="1em" height="1em" aria-hidden="true">
+              <use xlink:href="#three-dots"></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="offcanvas-lg offcanvas-end flex-grow-1" tabindex="-1" id="bdNavbar"
+          aria-labelledby="bdNavbarOffcanvasLabel" data-bs-scroll="true">
+          <div class="offcanvas-header px-4 pb-0">
+            <h5 class="offcanvas-title" id="bdNavbarOffcanvasLabel">Bootstrap</h5>
+            <button type="button" class="btn-close btn-close" data-bs-dismiss="offcanvas" aria-label="Close"
+              data-bs-target="#bdNavbar"></button>
+          </div>
+
+          <div class="offcanvas-body p-4 pt-0 p-lg-0">
+            <hr class="d-lg-none">
+            <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav">
+              <li class="nav-item dropdown">
+                <button type="button" class="btn dropdown-toggle align-items-center" id="bd-theme" aria-expanded="false"
+                  data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
+                  <svg class="bi" width="2em" height="2em" aria-hidden="true">
+                    <use xlink:href="#tools"></use>
+                  </svg>
+                  <span class="visually-hidden" id="bd-theme-text">Toggle tools</span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item" href="https://getbootstrap.com/docs/4.6/">v4.6.x</a></li>
+                  <li><a class="dropdown-item" href="https://getbootstrap.com/docs/3.4/">v3.4.1</a></li>
+                  <li><a class="dropdown-item" href="https://getbootstrap.com/2.3.2/">v2.3.2</a></li>
+                </ul>
+              </li>
+            </ul>
+            <hr class="d-lg-none">
+            <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
+              <li class="nav-item col-6 col-lg-auto">
+                <a class="nav-link py-2 px-0 px-lg-2" href="https://github.com/twbs" target="_blank" rel="noopener">
+                  <svg class="bi" width="2em" height="2em">
+                    <use xlink:href="#github" />
+                  </svg>
+                  <small class="d-lg-none ms-2">GitHub</small>
+                </a>
+              </li>
+
+              <li class="nav-item col-6 col-lg-auto">
+                <a class="nav-link py-2 px-0 px-lg-2"
+                  href="https://hub.docker.com/repository/docker/sfarosu/go-tooling-portal/general" target="_blank"
+                  rel="noopener">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="2em" width="2em"
+                    viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                    <path
+                      d="M349.9 236.3h-66.1v-59.4h66.1v59.4zm0-204.3h-66.1v60.7h66.1V32zm78.2 144.8H362v59.4h66.1v-59.4zm-156.3-72.1h-66.1v60.1h66.1v-60.1zm78.1 0h-66.1v60.1h66.1v-60.1zm276.8 100c-14.4-9.7-47.6-13.2-73.1-8.4-3.3-24-16.7-44.9-41.1-63.7l-14-9.3-9.3 14c-18.4 27.8-23.4 73.6-3.7 103.8-8.7 4.7-25.8 11.1-48.4 10.7H2.4c-8.7 50.8 5.8 116.8 44 162.1 37.1 43.9 92.7 66.2 165.4 66.2 157.4 0 273.9-72.5 328.4-204.2 21.4 .4 67.6 .1 91.3-45.2 1.5-2.5 6.6-13.2 8.5-17.1l-13.3-8.9zm-511.1-27.9h-66v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1v-59.4zm-78.1-72.1h-66.1v60.1h66.1v-60.1z" />
+                  </svg>
+                  <small class="d-lg-none ms-2">Docker</small>
+                </a>
+              </li>
+
+              <!-- separator -->
+              <li class="nav-item py-2 py-lg-1 col-12 col-lg-auto">
+                <div class="vr d-none d-lg-flex h-100 mx-lg-2"></div>
+                <hr class="d-lg-none my-2">
+              </li>
+
+              <!-- version -->
+              <li class="nav-item dropdown">
+                <a class="nav-link py-2 px-0 px-lg-2" href="/docs/5.3/examples/"
+                  onclick="ga('send', 'event', 'Navbar', 'Community links', 'Examples');">v0.1.5</a>
+              </li>
+
+              <!-- separator -->
+              <li class="nav-item py-2 py-lg-1 col-12 col-lg-auto">
+                <div class="vr d-none d-lg-flex h-100 mx-lg-2"></div>
+                <hr class="d-lg-none my-2">
+              </li>
+
+              <!-- theme -->
+              <button type="button" class="btn py-2 dropdown-toggle d-flex align-items-center" id="bd-theme"
+                aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
+                <svg class="bi my-1 theme-icon-active" width="2em" height="2em">
+                  <use href="#circle-half"></use>
+                </svg>
+                <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+                <li>
+                  <button type="button" class="btn btn-sm dropdown-item d-flex align-items-center"
+                    data-bs-theme-value="light" aria-pressed="false">
+                    <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
+                      <use href="#sun-fill"></use>
+                    </svg>
+                    Light
+                    <svg class="bi ms-auto d-none" width="1em" height="1em">
+                      <use href="#check2"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-sm dropdown-item d-flex align-items-center"
+                    data-bs-theme-value="dark" aria-pressed="false">
+                    <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
+                      <use href="#moon-stars-fill"></use>
+                    </svg>
+                    Dark
+                    <svg class="bi ms-auto d-none" width="1em" height="1em">
+                      <use href="#check2"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-sm dropdown-item d-flex align-items-center active"
+                    data-bs-theme-value="auto" aria-pressed="true">
+                    <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
+                      <use href="#circle-half"></use>
+                    </svg>
+                    Auto
+                    <svg class="bi ms-auto d-none" width="1em" height="1em">
+                      <use href="#check2"></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+          </div>
+        </div>
+      </nav>
+
+    </header>
+
+    <!-- main content -->
+    <main>
+      <div class="mx-auto text-center">
+        <h1 class="mb-3 fw-semibold lh-1">go-tooling-portal</ h1>
+
+        <p class="lead mb-4">
+          Simple and fast webapp that provides users with self-hosted tooling to avoid insecure internet convertors
+          Simple and fast webapp that provides users with self-hosted tooling to avoid insecure internet convertors
+          Simple and fast webapp that provides users with self-hosted tooling to avoid insecure internet convertors
+          Simple and fast webapp that provides users with self-hosted tooling to avoid insecure internet convertors
+          Simple and fast webapp that provides users with self-hosted tooling to avoid insecure internet convertors
+          Simple and fast webapp that provides users with self-hosted tooling to avoid insecure internet convertors
+          Simple and fast webapp that provides users with self-hosted tooling to avoid insecure internet convertors
+          Simple and fast webapp that provides users with self-hosted tooling to avoid insecure internet convertors
+          Simple and fast webapp that provides users with self-hosted tooling to avoid insecure internet convertors
+          Simple and fast webapp that provides users with self-hosted tooling to avoid insecure internet convertors
+          Simple and fast webapp that provides users with self-hosted tooling to avoid insecure internet convertors
+          Simple and fast webapp that provides users with self-hosted tooling to avoid insecure internet convertors
+          Simple and fast webapp that provides users with self-hosted tooling to avoid insecure internet convertors
+          Simple and fast webapp that provides users with self-hosted tooling to avoid insecure internet convertors
+          Simple and fast webapp that provides users with self-hosted tooling to avoid insecure internet convertors
+          Simple and fast webapp that provides users with self-hosted tooling to avoid insecure internet convertors
+          Simple and fast webapp that provides users with self-hosted tooling to avoid insecure internet convertors
+          Simple and fast webapp that provides users with self-hosted tooling to avoid insecure internet convertors
+          Simple and fast webapp that provides users with self-hosted tooling to avoid insecure internet convertors
+          Simple and fast webapp that provides users with self-hosted tooling to avoid insecure internet convertors
+          Simple and fast webapp that provides users with self-hosted tooling to avoid insecure internet convertors
+          Simple and fast webapp that provides users with self-hosted tooling to avoid insecure internet convertors
+          Simple and fast webapp that provides users with self-hosted tooling to avoid insecure internet convertors
+
+        </p>
+      </div>
+      <hr>
+
+      <div class="row g-5">
+        <div class="col-md-6">
+          <h2 class="text-body-emphasis">Starter projects</h2>
+          <p>Ready to go beyond the starter template? Check out these open source projects that you can quickly
+            duplicate to a new GitHub repository.</p>
+          <ul class="list-unstyled ps-0">
+            <li>
+              <a class="icon-link mb-1" href="https://github.com/twbs/examples/tree/main/icons-font" rel="noopener"
+                target="_blank">
+                <svg class="bi" width="16" height="16">
+                  <use xlink:href="#arrow-right-circle" />
+                </svg>
+                Bootstrap npm starter
+              </a>
+            </li>
+            <li>
+              <a class="icon-link mb-1" href="https://github.com/twbs/examples/tree/main/parcel" rel="noopener"
+                target="_blank">
+                <svg class="bi" width="16" height="16">
+                  <use xlink:href="#arrow-right-circle" />
+                </svg>
+                Bootstrap Parcel starter
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-6">
+          <h2 class="text-body-emphasis">Guides</h2>
+          <p>Read more detailed instructions and documentation on using or contributing to Bootstrap.</p>
+          <ul class="list-unstyled ps-0">
+            <li>
+              <a class="icon-link mb-1" href="../getting-started/introduction/">
+                <svg class="bi" width="16" height="16">
+                  <use xlink:href="#arrow-right-circle" />
+                </svg>
+                Bootstrap quick start guide
+              </a>
+            </li>
+            <li>
+              <a class="icon-link mb-1" href="../getting-started/webpack/">
+                <svg class="bi" width="16" height="16">
+                  <use xlink:href="#arrow-right-circle" />
+                </svg>
+                Bootstrap Webpack guide
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="pt-3 my-3 text-body-primary border-top">
+      go-tooling-portal &copy; 2019 - 2024
+    </footer>
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
