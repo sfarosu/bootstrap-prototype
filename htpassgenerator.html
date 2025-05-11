@@ -6,17 +6,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Starter Template · Bootstrap v5.3</title>
+  <title>Go Tooling Portal</title>
 
   <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/starter-template/">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <link href="../assets/custom/css/builtin.css" rel="stylesheet">
+  <link href="../assets/custom/css/custom.css" rel="stylesheet"> 
+  
 </head>
 
-<body>
+<body class="bg-body-tertiary">
   <!-- icon definition -->
   <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
     <symbol id="check2" viewBox="0 0 16 16">
@@ -63,7 +64,7 @@
   </svg>
 
   <!-- navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top shadow">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top shadow-lg p-1">
 
     <div class="container">
 
@@ -76,45 +77,45 @@
             <use href="#tools"></use>
           </svg>
         </button>
-        <ul class="dropdown-menu dropdown-menu-start p-2">
-          <li><a class="dropdown-item rounded" href="index.html">
+        <ul class="dropdown-menu dropdown-menu-start p-2 shadow-lg">
+          <li><a class="dropdown-item rounded active" href="index.html">
               <i class="bi bi-house"></i>
-              <span class="ms-2">index</span></a>
+              <span class="ms-2">Home</span></a>
           </li>
           <li>
             <hr class="dropdown-divider">
           </li>
-          <li><a class="dropdown-item rounded active" href="htpassgenerator.html">
-              <i class="bi bi-feather icon-colorized"></i>
-              <span class="ms-2">htPasswordGenerator</span></a>
+          <li><a class="dropdown-item rounded" href="htpassgenerator.html">
+              <i class="bi bi-feather"></i>
+              <span class="ms-2">HT Password Generator</span></a>
           </li>
           <li><a class="dropdown-item rounded" href="https://getbootstrap.com/docs/4.6/">
               <i class="bi bi-shuffle"></i>
-              <span class="ms-2">randomPasswordGenerator</span></a>
+              <span class="ms-2">Random Password Generator</span></a>
           </li>
           <li><a class="dropdown-item rounded" href="https://getbootstrap.com/docs/4.6/">
               <i class="bi bi-key"></i>
-              <span class="ms-2">sshKeyGenerator</span></a>
+              <span class="ms-2">SSH Key Generator</span></a>
           </li>
           <li><a class="dropdown-item rounded" href="https://getbootstrap.com/docs/4.6/">
               <i class="bi bi-filetype-json"></i>
-              <span class="ms-2">jsonPrettfier</span></a>
+              <span class="ms-2">JSON Prettifier</span></a>
           </li>
           <li><a class="dropdown-item rounded" href="https://getbootstrap.com/docs/4.6/">
               <i class="bi bi-file-code"></i>
-              <span class="ms-2">formatConverter</span></a>
+              <span class="ms-2">Format Converter</span></a>
           </li>
           <li><a class="dropdown-item rounded" href="https://getbootstrap.com/docs/4.6/">
               <i class="bi bi-clock"></i>
-              <span class="ms-2">epochTimeConverter</span></a>
+              <span class="ms-2">Epoch Time Converter</span></a>
           </li>
           <li><a class="dropdown-item rounded" href="https://getbootstrap.com/docs/4.6/">
               <i class="bi bi-file-lock"></i>
-              <span class="ms-2">base64Converter</span></a>
+              <span class="ms-2">Base64 Converter</span></a>
           </li>
           <li><a class="dropdown-item rounded" href="https://getbootstrap.com/docs/4.6/">
               <i class="bi bi-link"></i>
-              <span class="ms-2">urlDecoder</span></a>
+              <span class="ms-2">URL Decoder</span></a>
           </li>
         </ul>
       </div>
@@ -125,6 +126,8 @@
           <use xlink:href="#tools" />
         </svg>
       </a> -->
+
+      <!-- <span class="ms-2 fw-bold text-white">Go Tooling Portal</span> -->
 
       <!-- three-dots -->
       <div class="d-flex">
@@ -141,7 +144,7 @@
 
         <!-- three-dots hidden menu -->
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title text-white" id="bdNavbarOffcanvasLabel">go-tooling-portal</h5>
+          <h5 class="offcanvas-title text-white" id="bdNavbarOffcanvasLabel">Go Tooling Portal</h5>
           <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
             data-bs-target="#bdNavbar"></button>
         </div>
@@ -149,7 +152,7 @@
         <div class="offcanvas-body p-4 pt-0 p-lg-0">
           <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
             <li class="nav-item col-6 col-lg-auto">
-              <a class="nav-link py-2 px-0 px-lg-2 text-white" href="https://github.com/twbs" target="_blank"
+              <a class="nav-link py-2 px-0 px-lg-2 text-white" href="https://github.com/sfarosu/go-tooling-portal" target="_blank"
                 rel="noopener">
                 <svg class="bi" width="16" height="16">
                   <use xlink:href="#github" />
@@ -161,7 +164,7 @@
               <a class="nav-link py-2 px-0 px-lg-2 text-white"
                 href="https://hub.docker.com/repository/docker/sfarosu/go-tooling-portal/general" target="_blank"
                 rel="noopener">
-                <svg class="docker-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="16" width="16"
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="16" width="16"
                   viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
                   <path
                     d="M349.9 236.3h-66.1v-59.4h66.1v59.4zm0-204.3h-66.1v60.7h66.1V32zm78.2 144.8H362v59.4h66.1v-59.4zm-156.3-72.1h-66.1v60.1h66.1v-60.1zm78.1 0h-66.1v60.1h66.1v-60.1zm276.8 100c-14.4-9.7-47.6-13.2-73.1-8.4-3.3-24-16.7-44.9-41.1-63.7l-14-9.3-9.3 14c-18.4 27.8-23.4 73.6-3.7 103.8-8.7 4.7-25.8 11.1-48.4 10.7H2.4c-8.7 50.8 5.8 116.8 44 162.1 37.1 43.9 92.7 66.2 165.4 66.2 157.4 0 273.9-72.5 328.4-204.2 21.4 .4 67.6 .1 91.3-45.2 1.5-2.5 6.6-13.2 8.5-17.1l-13.3-8.9zm-511.1-27.9h-66v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1v-59.4zm-78.1-72.1h-66.1v60.1h66.1v-60.1z" />
@@ -198,11 +201,11 @@
                 </svg>
                 <span class="d-lg-none ms-2" id="bd-theme-text">Theme</span>
               </button>
-              <ul class="dropdown-menu dropdown-menu-end p-2 shadow">
+              <ul class="dropdown-menu dropdown-menu-end p-2 shadow-lg">
                 <li>
                   <button type="button" class="btn btn-sm dropdown-item d-flex align-items-center rounded"
                     data-bs-theme-value="light">
-                    <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
+                    <svg class="bi me-2" width="1em" height="1em">
                       <use href="#sun-fill"></use>
                     </svg>
                     Light
@@ -214,7 +217,7 @@
                 <li>
                   <button type="button" class="btn btn-sm dropdown-item d-flex align-items-center rounded"
                     data-bs-theme-value="dark">
-                    <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
+                    <svg class="bi me-2 theme-icon" width="1em" height="1em">
                       <use href="#moon-stars-fill"></use>
                     </svg>
                     Dark
@@ -226,7 +229,7 @@
                 <li>
                   <button type="button" class="btn btn-sm dropdown-item d-flex align-items-center active rounded"
                     data-bs-theme-value="auto">
-                    <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
+                    <svg class="bi me-2 theme-icon" width="1em" height="1em">
                       <use href="#circle-half"></use>
                     </svg>
                     Auto
@@ -247,88 +250,64 @@
   <main class="bd-main bg">
     <div class="container shadow p-3 mb-4 rounded">
 
-      <h1 class="text-body-emphasis">Get started with Bootstrap</h1>
-      <p class="fs-5">Quickly and easily get started with Bootstrap's compiled, production-ready files with
-        this barebones example featuring some basic HTML and helpful links. Download all our examples to get started.
-        this barebones example featuring some basic HTML and helpful links. Download all our examples to get started.
-        this barebones example featuring some basic HTML and helpful links. Download all our examples to get started.
-        this barebones example featuring some basic HTML and helpful links. Download all our examples to get started.
-        this barebones example featuring some basic HTML and helpful links. Download all our examples to get started.
-        this barebones example featuring some basic HTML and helpful links. Download all our examples to get started.
-        this barebones example featuring some basic HTML and helpful links. Download all our examples to get started.
-        this barebones example featuring some basic HTML and helpful links. Download all our examples to get started.
-        this barebones example featuring some basic HTML and helpful links. Download all our examples to get started.
-        this barebones example featuring some basic HTML and helpful links. Download all our examples to get started.
-        this barebones example featuring some basic HTML and helpful links. Download all our examples to get started.
-        this barebones example featuring some basic HTML and helpful links. Download all our examples to get started.
-        this barebones example featuring some basic HTML and helpful links. Download all our examples to get started.
-        this barebones example featuring some basic HTML and helpful links. Download all our examples to get started.
-      </p>
 
-      <div class="mb-5">
-        <a href="../examples/" class="btn btn-success btn-lg px-4">Download examples</a>
-      </div>
-
+      <h1 class="text-center ">HTPasswordGenerator</h1>
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <form>
+              <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" class="form-control" id="username" placeholder="Enter username" required>
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <div class="input-group">
+                  <input type="password" class="form-control" id="password" placeholder="Enter password" required>
+                  <button class="btn btn-outline-secondary" type="button" id="togglePassword">
+                    <i class="bi bi-eye"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="algorithm" class="form-label">Choose an algorithm:</label>
+                <select class="form-select" id="algorithm">
+                  <option value="apr1">MD5-based password algorithm, Apache variant</option>
+                  <option value="1">MD5-based password algorithm</option>
+                  <option value="5">SHA256-based password algorithm</option>
+                  <option value="6">SHA512-based password algorithm</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-success">Generate Password</button>
+            </form>
+          </div>
+        </div>
+    
     </div>
 
-    <div class="container shadow p-3 mb-4 rounded">
-      <div class="row g-5">
-        <div class="col-md-6">
-          <h2 class="text-body-emphasis">Starter projects</h2>
-          <p>Ready to go beyond the starter template? Check out these open source projects that you can quickly
-            duplicate to a new GitHub repository.</p>
-          <ul class="list-unstyled ps-0">
-            <li>
-              <a class="icon-link mb-1 bg" href="https://github.com/twbs/examples/tree/main/icons-font" rel="noopener"
-                target="_blank">
-                <svg class="bi" width="16" height="16">
-                  <use xlink:href="#arrow-right-circle" />
-                </svg>
-                Bootstrap npm starter
-              </a>
-            </li>
-            <li>
-              <a class="icon-link mb-1" href="https://github.com/twbs/examples/tree/main/parcel" rel="noopener"
-                target="_blank">
-                <svg class="bi" width="16" height="16">
-                  <use xlink:href="#arrow-right-circle" />
-                </svg>
-                Bootstrap Parcel starter
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="col-md-6">
-          <h2 class="text-body-emphasis">Guides</h2>
-          <p>Read more detailed instructions and documentation on using or contributing to Bootstrap.</p>
-          <ul class="list-unstyled ps-0">
-            <li>
-              <a class="icon-link mb-1" href="../getting-started/introduction/">
-                <svg class="bi" width="16" height="16">
-                  <use xlink:href="#arrow-right-circle" />
-                </svg>
-                Bootstrap quick start guide
-              </a>
-            </li>
-            <li>
-              <a class="icon-link mb-1" href="../getting-started/webpack/">
-                <svg class="bi" width="16" height="16">
-                  <use xlink:href="#arrow-right-circle" />
-                </svg>
-                Bootstrap Webpack guide
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-    </div>
+    <!-- for htmx see this video https://www.youtube.com/watch?v=F9H6vYelYyU&t=334s -->
+   
+    <!-- Info bar -->
+    <div class="info-bar">
+      <p class="mb-0">No cookies or other data are stored !</p>
+    </div>  
   </main>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous">
+  </script>
+
+
+<!-- Show/hide password -->
+<script>
+  document.getElementById('togglePassword').addEventListener('click', function () {
+    const passwordField = document.getElementById('password');
+    const passwordFieldType = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';
+    passwordField.setAttribute('type', passwordFieldType);
+    this.querySelector('i').classList.toggle('bi-eye');
+    this.querySelector('i').classList.toggle('bi-eye-slash');
+  });
+</script>
 
 </body>
 
